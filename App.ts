@@ -15,6 +15,3 @@ pessoa.cadastrar(
 pessoa.getInfo();
 
 pessoa.excluir();
-
-
-// 9c5b94b1-35ad-49bb-b118-8e8fc24abf8 
