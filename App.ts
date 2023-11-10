@@ -3,6 +3,10 @@ import Professor from "./Professor";
 import Oferta from "./Oferta";
 import Curso from "./Curso";
 
+
+
+// Cadastro de Professor
+
 const prof_joao = new Professor(
     1,
     "João Ferreira",
@@ -13,6 +17,10 @@ const prof_joao = new Professor(
     "Rua 55 casa 8 - Brasilia - DF",
     111
 );
+
+
+
+// Cadastro de Aluno
 
 const aluno_pedro = new Aluno(
     9,
@@ -25,47 +33,37 @@ const aluno_pedro = new Aluno(
     999
 );
 
-// const aluno_alice = new Aluno(
-//     8,
-//     "Alice Maria",
-//     "333.333.333-33",
-//     "F",
-//     "01/01/2009",
-//     "alice@gmail.com",
-//     "Rua 55 casa 5 - Brasilia - DF",
-//     888
-// );
 
-const curso_mat = new Curso(
-    "MAT",
-    "Matemática",
-    30
-);
+
+// Cadastro de Curso
+
+const curso_mat = new Curso("MAT", "Matemática", 30);
+
+
+
+// Cadastro de Ofertas
 
 const ofertas: Oferta[] = [];
 
-const mat_1599 = new Oferta(
-    "MAT1599",
-    curso_mat,
-    prof_joao
-);
-
-const mat_2050 = new Oferta(
-    "MAT2050",
-    curso_mat,
-    prof_joao
-);
+const mat_1599 = new Oferta("MAT1599", curso_mat, prof_joao);
+const mat_2050 = new Oferta("MAT2050", curso_mat, prof_joao);
 
 ofertas.push(mat_1599);
 ofertas.push(mat_2050);
 
-aluno_pedro.matricular("MAT", ofertas);
+
+
+// Matriculando Aluno
 aluno_pedro.matricular("MAT", ofertas);
 
+
+// Verificando os cursos do aluno
 aluno_pedro.verificar_cursos_matriculados();
 
+
+// Desistindo do curso
 aluno_pedro.desistir("MAT");
 
+
+// Verificando os cursos do aluno
 aluno_pedro.verificar_cursos_matriculados();
-
-aluno_pedro.desistir("MAT");
