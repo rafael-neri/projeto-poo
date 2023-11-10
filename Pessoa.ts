@@ -2,13 +2,17 @@ class Pessoa {
 
     constructor(
         private id: number,
-        private nome: string,
-        private cpf: string,
-        private genero: string,
-        private data_nascimento: string,
-        private email: string,
-        private endereco: string,
+        protected nome: string,
+        protected cpf: string,
+        protected genero: string,
+        protected data_nascimento: string,
+        protected email: string,
+        protected endereco: string,
     ) { }
+
+    getId() {
+        return this.id;
+    }
 
     excluir() {
         console.log(`Pessoa excluida: ${this.nome}`);
