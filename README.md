@@ -1,5 +1,19 @@
 # Projeto Orientação a Objetos
 
+Você precisar tem instalado em seu computador: [GIT](https://git-scm.com/), [Node.js](https://github.com/rafael-neri/projeto-poo.git) e [Visual Studio Code](https://code.visualstudio.com/).
+
+Para executar o código typescript você precisa instalar o ts-node:
+```sh
+npm install -g ts-node
+```
+
+Para acessar o projeto:
+```sh
+git clone https://github.com/rafael-neri/projeto-poo.git
+cd projeto-poo
+code .
+```
+
 ## Squads
 
 ### Monte Olimpo
