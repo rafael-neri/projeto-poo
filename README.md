@@ -14,6 +14,11 @@ cd projeto-poo
 code .
 ```
 
+Para executar o projeto:
+```sh
+ts-node App.ts
+```
+
 ## Squads
 
 ### Monte Olimpo
